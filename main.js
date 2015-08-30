@@ -1,10 +1,10 @@
-var myEl = document.getElementById('simpleDiv');
+$(function(){
 
-myEl.addEventListener('click', function() {
-    alert('Hello world');
-});
+  function sayWorking(){
+    console.log('working')
+  }
 
-function sayWorking(){
-  console.log('working')
-}
+$('div#simpleDiv').on('click', sayWorking(){})
+  
+
 
