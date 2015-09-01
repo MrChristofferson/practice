@@ -26,7 +26,11 @@ var blogs = new Blogs([blog1, blog2, blog3])
 // View
 
 var BlogView = Backbone.View.extend({
-
+ model: new Blog(),
+ tagName: 'tr',
+ initialize: function(){
+  this.template = _.template($)
+ }
 });
 
 var BlogsView = Backbone.View.extend({
